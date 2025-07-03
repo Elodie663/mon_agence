@@ -8,3 +8,18 @@ services:
     backend:
         build: ./backend
         container_name: backend-container
+
+    database:
+        image: mariadb:latest
+        environment:
+            MYSQL_ROOT_PASSWORD: exemplepassword
+            MYSQL_DATABASE: monagence_db
+            MYSQL_USER: user
+            MYSQL_PASSWORD: password
+        ports:
+            - "3306:3306"
+        volumes:
+            - db_data:/var/lib/mysql
+
+volumes:
+    db_data:
