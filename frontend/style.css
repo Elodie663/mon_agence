@@ -1,0 +1,68 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #d9d9d9;
+  font-family: 'Abhaya Libre', serif;
+  text-align: center;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+
+.footer {
+    background: #004aad;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin:auto;
+}
+
+header {
+    background: #004aad;
+    color: white;
+    text-align: center;
+    padding: 10% 0;
+    padding: 1em 2em 2em;
+}
+.hero {
+    height: 100vh;                
+}
+.nav-links {
+    max-width: 1200px;           /* Largeur maximale */
+    margin: 0 auto;              /* Centré */
+    float: right ;               /* Flexbox pour aligner */
+    /*justify-content: space-between;  Logo à gauche, menu à droite */
+    align-items: center;         /* Alignement vertical */
+    padding: 0 2rem;
+    color: white;
+}
+
+.container {
+  column-count: 3;
+  column-gap: 100px;
+  height: 100vh;
+  text-align: center;
+}
+
+.produit
+{
+  color: black; 
+  text-align: center;
+  height: 100vh; 
+}
+
+.hero-content {
+text-align: center;    
+}
+
+.form-group {
+ text-align: center;  
+}
